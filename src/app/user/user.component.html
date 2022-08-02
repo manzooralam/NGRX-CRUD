@@ -1,0 +1,15 @@
+<h3>User Form</h3>
+
+<div>
+  <form [formGroup]="userForm">
+
+    <label for="first-name">Name: </label>
+    <input id="first-name" type="text" formControlName="name">
+
+    <label for="age">Age: </label>
+    <input id="age" type="number" formControlName="age">
+
+    <button type="submit" (click)="addNewUser()"> Add</button>
+  </form>
+
+</div>
